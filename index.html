@@ -480,12 +480,27 @@
             gap: 2rem;
         }
 
+        @media (max-width: 760px) {
+            .hero-top {
+                flex-direction: column;
+                gap: 0.8rem;
+            }
+        }
+
         .hero-tag {
             font-family: var(--f-mono);
             font-size: var(--fs-mono);
             letter-spacing: .14em;
             text-transform: uppercase;
             color: #A6A498;
+        }
+
+        @media (max-width: 760px) {
+            .hero-tag {
+                word-wrap: break-word;
+                white-space: normal;
+                line-height: 1.4;
+            }
         }
 
         .hero-body {
@@ -1646,8 +1661,8 @@
             </svg>
             <div class="hero-top">
                 <span class="hero-tag">Trucxo Technologies</span>
-                <span class="hero-tag">Software Products&nbsp;·&nbsp;Digital
-                    Transformation&nbsp;·&nbsp;AI&nbsp;·&nbsp;Technology Consulting</span>
+                <span class="hero-tag">Software Products · Digital
+                    Transformation · AI · Technology Consulting</span>
             </div>
             <div class="hero-body">
                 <h1 class="hero-head">DIGITAL SYSTEMS BUILT FOR REAL OPERATIONS.</h1>
